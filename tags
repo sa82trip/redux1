@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+App	src/App.js	/^function App() {$/;"	F
+Buttons	src/Button.js	/^const Buttons = ({ onClick, name, value }) => {$/;"	F
+Buttons	src/Buttons.js	/^const Buttons = ({ onClick }) => {$/;"	F
+Counter	src/Counter.js	/^const Counter = ({ counter }) => {$/;"	F
+InputField	src/InputField.js	/^const InputField = ({ onClick }) => {$/;"	F
+checkValidServiceWorker	src/serviceWorker.js	/^function checkValidServiceWorker(swUrl, config) {$/;"	F
+count	src/App.js	/^  const [count, setCount] = useState(0);$/;"	V
+getByText	src/App.test.js	/^  const { getByText } = render(<App \/>);$/;"	V
+handleClick	src/App.js	/^  const handleClick = (e) => {$/;"	F
+headers	src/serviceWorker.js	/^    headers: { 'Service-Worker': 'script' },$/;"	P
+initializer	src/App.js	/^  const initializer = (result) => {$/;"	F
+onstatechange	src/serviceWorker.js	/^        installingWorker.onstatechange = () => {$/;"	M
+onupdatefound	src/serviceWorker.js	/^      registration.onupdatefound = () => {$/;"	M
+publicUrl	src/serviceWorker.js	/^    const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);$/;"	V
+regex	src/App.js	/^    const regex = \/[0-9]\/;$/;"	V
+register	src/serviceWorker.js	/^export function register(config) {$/;"	E
+registerValidSW	src/serviceWorker.js	/^function registerValidSW(swUrl, config) {$/;"	F
+result	src/App.js	/^    let result = 0;$/;"	V
+serviceWorker	src/index.js	/^import * as serviceWorker from '.\/serviceWorker';$/;"	I
+setCount	src/App.js	/^  const [count, setCount] = useState(0);$/;"	V
+unregister	src/serviceWorker.js	/^export function unregister() {$/;"	E
