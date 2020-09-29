@@ -6,9 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 App	src/App.js	/^function App() {$/;"	F
 Buttons	src/Button.js	/^const Buttons = ({ onClick, name, value }) => {$/;"	F
-Buttons	src/Buttons.js	/^const Buttons = ({ onClick }) => {$/;"	F
 Counter	src/Counter.js	/^const Counter = ({ counter }) => {$/;"	F
-InputField	src/InputField.js	/^const InputField = ({ onClick }) => {$/;"	F
 checkValidServiceWorker	src/serviceWorker.js	/^function checkValidServiceWorker(swUrl, config) {$/;"	F
 count	src/App.js	/^  const [count, setCount] = useState(0);$/;"	V
 getByText	src/App.test.js	/^  const { getByText } = render(<App \/>);$/;"	V
