@@ -1,15 +1,22 @@
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 
-export const increment = (number) => {
+const increment = (number) => {
   return {
     type: INCREMENT,
     number,
   };
 };
-export const decrement = (number) => {
+const decrement = (number) => {
   return {
     type: DECREMENT,
     number,
   };
 };
+
+//이렇게 해서 내보내기
+const allActions = {
+  increment,
+  decrement,
+};
+export default allActions;

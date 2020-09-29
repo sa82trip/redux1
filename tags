@@ -9,16 +9,18 @@ Buttons	src/Button.js	/^const Buttons = ({ onClick, name, value }) => {$/;"	F
 Counter	src/Counter.js	/^const Counter = ({ counter }) => {$/;"	F
 DECREMENT	src/actions/index.js	/^export const DECREMENT = "DECREMENT";$/;"	E
 INCREMENT	src/actions/index.js	/^export const INCREMENT = "INCREMENT";$/;"	E
-actions	src/App.js	/^import * as actions from ".\/actions";$/;"	I
+allActions	src/actions/index.js	/^const allActions = {$/;"	O
 checkValidServiceWorker	src/serviceWorker.js	/^function checkValidServiceWorker(swUrl, config) {$/;"	F
 count	src/App.js	/^  const count = useSelector((store) => store.counterReducer);$/;"	F
 counterInitialState	src/reducers/index.js	/^const counterInitialState = 0;$/;"	V
 counterReducer	src/reducers/index.js	/^const counterReducer = (state = counterInitialState, action) => {$/;"	F
-decrement	src/actions/index.js	/^export const decrement = (number) => {$/;"	E
+decrement	src/actions/index.js	/^  decrement,$/;"	V
+decrement	src/actions/index.js	/^const decrement = (number) => {$/;"	F
 getByText	src/App.test.js	/^  const { getByText } = render(<App \/>);$/;"	V
 handleClick	src/App.js	/^  const handleClick = (e) => {$/;"	F
 headers	src/serviceWorker.js	/^    headers: { 'Service-Worker': 'script' },$/;"	P
-increment	src/actions/index.js	/^export const increment = (number) => {$/;"	E
+increment	src/actions/index.js	/^  increment,$/;"	V
+increment	src/actions/index.js	/^const increment = (number) => {$/;"	F
 initializer	src/App.js	/^  const initializer = () => {$/;"	F
 number	src/actions/index.js	/^    number,$/;"	V
 onstatechange	src/serviceWorker.js	/^        installingWorker.onstatechange = () => {$/;"	M

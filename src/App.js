@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Counter from "./Counter";
 import Button from "./Button";
 import { useSelector, useDispatch } from "react-redux";
-import * as actions from "./actions";
+import allActions from "./actions";
 
 function App() {
   const initializer = () => {
@@ -16,7 +16,7 @@ function App() {
   const handleClick = (e) => {
     const regex = /[0-9]/;
     if (regex.test(numberInput.current.value)) {
-      dispatch(actions[`${e.target.name}`](numberInput.current.value));
+      dispatch(allActions[`${e.target.name}`](numberInput.current.value));
       initializer();
     }
   };
