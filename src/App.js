@@ -1,34 +1,23 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import Counter from "./Counter";
 import Button from "./Button";
+import { useSelector, useDispatch } from "react-redux";
+import * as actions from "./actions";
 
 function App() {
-  const initializer = (result) => {
-    setCount(() => {
-      return result;
-    });
+  const initializer = () => {
     numberInput.current.value = "";
     numberInput.current.focus();
   };
-  const [count, setCount] = useState(0);
+
+  const count = useSelector((store) => store.counterReducer);
+  const dispatch = useDispatch();
   const numberInput = useRef(null);
   const handleClick = (e) => {
-    console.log("entered");
-    let result = 0;
     const regex = /[0-9]/;
     if (regex.test(numberInput.current.value)) {
-      switch (e.target.name) {
-        case "plus":
-          result = parseInt(count) + parseInt(numberInput.current.value);
-          initializer(result);
-          return result;
-        case "minus":
-          result = parseInt(count) - parseInt(numberInput.current.value);
-          initializer(result);
-          return result;
-        default:
-          return 0;
-      }
+      dispatch(actions[`${e.target.name}`](numberInput.current.value));
+      initializer();
     }
   };
   return (
@@ -37,13 +26,9 @@ function App() {
       <div>
         <Counter counter={count} />
       </div>
-      {/*
-<input onClick={handleClick} name="plus" type="button" value="+" />
-<input onClick={handleClick} name="minus" type="button" value="-" />
-          */}
       <input type="text" ref={numberInput} />
-      <Button onClick={handleClick} value={"+"} name={"plus"} />
-      <Button onClick={handleClick} value={"-"} name={"minus"} />
+      <Button onClick={handleClick} value={"+"} name={"increment"} />
+      <Button onClick={handleClick} value={"-"} name={"decrement"} />
     </div>
   );
 }

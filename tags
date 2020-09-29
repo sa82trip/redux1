@@ -6,22 +6,28 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 App	src/App.js	/^function App() {$/;"	F
 Buttons	src/Button.js	/^const Buttons = ({ onClick, name, value }) => {$/;"	F
-Buttons	src/Buttons.js	/^const Buttons = ({ onClick }) => {$/;"	F
 Counter	src/Counter.js	/^const Counter = ({ counter }) => {$/;"	F
-InputField	src/InputField.js	/^const InputField = ({ onClick }) => {$/;"	F
+DECREMENT	src/actions/index.js	/^export const DECREMENT = "DECREMENT";$/;"	E
+INCREMENT	src/actions/index.js	/^export const INCREMENT = "INCREMENT";$/;"	E
+actions	src/App.js	/^import * as actions from ".\/actions";$/;"	I
 checkValidServiceWorker	src/serviceWorker.js	/^function checkValidServiceWorker(swUrl, config) {$/;"	F
-count	src/App.js	/^  const [count, setCount] = useState(0);$/;"	V
+count	src/App.js	/^  const count = useSelector((store) => store.counterReducer);$/;"	F
+counterInitialState	src/reducers/index.js	/^const counterInitialState = 0;$/;"	V
+counterReducer	src/reducers/index.js	/^const counterReducer = (state = counterInitialState, action) => {$/;"	F
+decrement	src/actions/index.js	/^export const decrement = (number) => {$/;"	E
 getByText	src/App.test.js	/^  const { getByText } = render(<App \/>);$/;"	V
 handleClick	src/App.js	/^  const handleClick = (e) => {$/;"	F
 headers	src/serviceWorker.js	/^    headers: { 'Service-Worker': 'script' },$/;"	P
-initializer	src/App.js	/^  const initializer = (result) => {$/;"	F
+increment	src/actions/index.js	/^export const increment = (number) => {$/;"	E
+initializer	src/App.js	/^  const initializer = () => {$/;"	F
+number	src/actions/index.js	/^    number,$/;"	V
 onstatechange	src/serviceWorker.js	/^        installingWorker.onstatechange = () => {$/;"	M
 onupdatefound	src/serviceWorker.js	/^      registration.onupdatefound = () => {$/;"	M
 publicUrl	src/serviceWorker.js	/^    const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);$/;"	V
 regex	src/App.js	/^    const regex = \/[0-9]\/;$/;"	V
 register	src/serviceWorker.js	/^export function register(config) {$/;"	E
 registerValidSW	src/serviceWorker.js	/^function registerValidSW(swUrl, config) {$/;"	F
-result	src/App.js	/^    let result = 0;$/;"	V
-serviceWorker	src/index.js	/^import * as serviceWorker from '.\/serviceWorker';$/;"	I
-setCount	src/App.js	/^  const [count, setCount] = useState(0);$/;"	V
+serviceWorker	src/index.js	/^import * as serviceWorker from ".\/serviceWorker";$/;"	I
+type	src/actions/index.js	/^    type: DECREMENT,$/;"	P
+type	src/actions/index.js	/^    type: INCREMENT,$/;"	P
 unregister	src/serviceWorker.js	/^export function unregister() {$/;"	E
